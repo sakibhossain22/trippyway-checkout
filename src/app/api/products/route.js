@@ -4,9 +4,8 @@ import clientPromise from '../../../../lib/mongodb';
 export async function GET() {
     try {
         const client = await clientPromise;
-        const db = client.db('trippyway'); // Replace with your database name
+        const db = client.db('trippyway');
 
-        // Fetch packages from the 'packages' collection
         const packages = await db.collection('packages').find({}).toArray();
 
         return NextResponse.json(packages, { status: 200 });

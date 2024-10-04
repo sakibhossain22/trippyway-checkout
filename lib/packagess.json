@@ -1,0 +1,107 @@
+[
+    {
+      "_id": "66ffd372d273b9e8e6b109dd",
+      "id": "trippy-adventure",
+      "name": "Trippy Adventure",
+      "description": "A fun-filled adventure for you and your family.",
+      "basePrice": 1000,
+      "duration": "3 Days",
+      "image": "https://unsplash.com/photos/nJXQiVFD6fI"
+    },
+    {
+      "_id": "66ffd372d273b9e8e6b109de",
+      "id": "mountain-escape",
+      "name": "Mountain Escape",
+      "description": "Escape to the serene mountains for a peaceful getaway.",
+      "basePrice": 1500,
+      "duration": "5 Days",
+      "image": "https://www.pexels.com/photo/mountain-covered-with-snow-753626/"
+    },
+    {
+      "_id": "66ffd372d273b9e8e6b109df",
+      "id": "beachside-bliss",
+      "name": "Beachside Bliss",
+      "description": "Relax by the beach with beautiful sunsets and water sports.",
+      "basePrice": 1200,
+      "duration": "4 Days",
+      "image": "https://unsplash.com/photos/oN1lK0kdZ_c"
+    },
+    {
+      "_id": "66ffd372d273b9e8e6b109e0",
+      "id": "cultural-heritage-tour",
+      "name": "Cultural Heritage Tour",
+      "description": "Explore ancient cities and dive into the rich cultural heritage.",
+      "basePrice": 900,
+      "duration": "6 Days",
+      "image": "https://unsplash.com/photos/WLxQvbMyfas"
+    },
+    {
+      "_id": "66ffd372d273b9e8e6b109e1",
+      "id": "city-lights-experience",
+      "name": "City Lights Experience",
+      "description": "Discover the vibrant city life with night tours and modern architecture.",
+      "basePrice": 1100,
+      "duration": "3 Days",
+      "image": "https://www.pexels.com/photo/photography-of-vehicles-passing-through-suspension-bridge-1619569/"
+    },
+    {
+      "_id": "66ffd372d273b9e8e6b109e2",
+      "id": "safari-adventure",
+      "name": "Safari Adventure",
+      "description": "Witness wildlife up close with this thrilling safari tour.",
+      "basePrice": 2000,
+      "duration": "7 Days",
+      "image": "https://unsplash.com/photos/SJ0iMdl1Cec"
+    },
+    {
+      "_id": "66ffd372d273b9e8e6b109e3",
+      "id": "island-hopping-extravaganza",
+      "name": "Island Hopping Extravaganza",
+      "description": "Hop between beautiful islands and enjoy exclusive resorts.",
+      "basePrice": 1800,
+      "duration": "6 Days",
+      "image": "https://www.pexels.com/photo/aerial-view-photo-of-island-2104151/"
+    },
+    {
+      "_id": "66ffd372d273b9e8e6b109e4",
+      "id": "historical-europe",
+      "name": "Historical Europe",
+      "description": "Travel through Europe’s iconic historical landmarks and architecture.",
+      "basePrice": 2200,
+      "duration": "10 Days",
+      "image": "https://unsplash.com/photos/CY6MLt8S53E"
+    },
+    {
+      "_id": "66ffd372d273b9e8e6b109e5",
+      "id": "desert-safari",
+      "name": "Desert Safari",
+      "description": "Ride through sand dunes and enjoy traditional desert experiences.",
+      "basePrice": 800,
+      "duration": "2 Days",
+      "image": "https://unsplash.com/photos/FhlrEJr7qso"
+    },
+    {
+      "_id": "66ffd372d273b9e8e6b109e6",
+      "id": "luxury-cruise",
+      "name": "Luxury Cruise",
+      "description": "A premium cruise experience with all-inclusive facilities and entertainment.",
+      "basePrice": 2500,
+      "duration": "8 Days",
+      "image": "https://unsplash.com/photos/UsSdMZ78Q3E"
+    }
+  ]
+  
+  
+  https://images.pexels.com/photos/28136905/pexels-photo-28136905/free-photo-of-a-girl-picking-flowers-and-a-boy-playing-an-instrument.jpeg
+  https://images.pexels.com/photos/14667378/pexels-photo-14667378.jpeg
+  https://images.pexels.com/photos/14177806/pexels-photo-14177806.jpeg
+  https://images.pexels.com/photos/28118375/pexels-photo-28118375/free-photo-of-scenic-view-of-a-river-between-trees-in-a-mountain-valley.jpeg
+  https://images.pexels.com/photos/219692/pexels-photo-219692.jpeg
+  jpeg
+  https://images.pexels.com/photos/26712046/pexels-photo-26712046/free-photo-of-two-elephants-in-a-zoo.jpeg
+  https://images.pexels.com/photos/28359724/pexels-photo-28359724/free-photo-of-a-mountain-in-the-distance.jpeg
+  https://images.pexels.com/photos/28252550/pexels-photo-28252550/free-photo-of-a-view-of-a-village-with-many-roofs.jpeg
+  https://images.pexels.com/photos/28356797/pexels-photo-28356797/free-photo-of-sahara-desert-landscpae.jpeg
+  https://images.pexels.com/photos/27703376/pexels-photo-27703376/free-photo-of-white-cars-in-garage.jpeg
+  https://images.pexels.com/photos/27703376/pexels-photo-27703376/free-photo-of-white-cars-in-garage.jpeg
+  
