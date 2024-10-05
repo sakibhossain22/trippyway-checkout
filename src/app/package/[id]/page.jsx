@@ -83,7 +83,6 @@ const Page = ({ params }) => {
                                 starDimension="20px"
                                 >
                             </StarRatings>
-                            <IoIosStar />
 
                         </div>
                         <div>
