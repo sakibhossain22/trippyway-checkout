@@ -30,9 +30,7 @@ export default function Packages() {
     fetchPackages();
   }, []);
 
-  if (loading) {
-    return <p className="text-center text-lg">Loading packages...</p>;
-  }
+
 
   if (error) {
     return <p className="text-center text-red-500">Error: {error}</p>;

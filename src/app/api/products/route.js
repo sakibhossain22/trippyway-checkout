@@ -5,7 +5,6 @@ export async function GET() {
     try {
         const client = await clientPromise;
         const db = client.db('trippyway');
-
         const packages = await db.collection('packages').find({}).toArray();
 
         return NextResponse.json(packages, { status: 200 });

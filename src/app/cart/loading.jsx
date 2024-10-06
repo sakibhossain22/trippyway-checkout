@@ -1,5 +1,5 @@
 "use client"
-import loadingImage from "../../asset/loading.gif"
+import loadingImage from "../../../asset/loading.gif"
 import Image from "next/image";
 
 const loading = () => {
