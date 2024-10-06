@@ -5,7 +5,6 @@ import Navbar from "@/sharedComponent/Navbar/Navbar";
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { useState } from 'react';
 
-// Load custom fonts
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",

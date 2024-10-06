@@ -10,10 +10,10 @@ const Page = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
   const [selectedPackage, setSelectedPackage] = useState(null);
-  const [coupon, setCoupon] = useState(""); // State for coupon input
-  const [discountApplied, setDiscountApplied] = useState(0); // State for discount value
-  const [members, setMembers] = useState([]); // State to store added members
-  const [prePack, setPrePack] = useState([]); // State to store added members
+  const [coupon, setCoupon] = useState(""); 
+  const [discountApplied, setDiscountApplied] = useState(0); 
+  const [members, setMembers] = useState([]);
+  const [prePack, setPrePack] = useState([]);
   const [color, setColor] = useState("bg-red-600");
   const [textColor, setTextColor] = useState("text-red-600");
   const { data, refetch } = usePackage(selectedPackage)
@@ -61,7 +61,6 @@ const Page = () => {
     setCoupon(e.target.value);
   };
 
-  // Handle coupon submission
   const applyCoupon = () => {
     if (coupon === "DISCOUNT10") {
       setDiscountApplied(10); // Applying 10% discount
@@ -82,30 +81,24 @@ const Page = () => {
     }
   };
 
-  // Calculate total price including members and apply discount
   const calculateTotalPrice = () => {
-    // Calculate total base price of all selected packages
     const totalBasePrice = packData.reduce(
-        (acc, pkg) => acc + (pkg.basePrice || 0), // Sum base prices of all selected packages
+        (acc, pkg) => acc + (pkg.basePrice || 0), 
         0
     );
 
     // Calculate total member contribution
     const totalMemberContribution = data?.memberData?.reduce(
-        (acc, member) => acc + (member.isAdult ? 100 : 50), // Adult = $100, Child = $50
+        (acc, member) => acc + (member.isAdult ? 100 : 50), 
         0
-    ) || 0; // Default to 0 if memberData is not available
+    ) || 0; 
 
-    // Calculate the total after deducting the members' contributions
     const total = totalBasePrice - totalMemberContribution;
 
-    // Apply discount if there is any
     const discountedTotal = total - (total * (discountApplied || 0)) / 100 + 5;
 
-    // Ensure total doesn't go below 0
     const finalTotalPrice = discountedTotal < 0 ? "0.00" : discountedTotal.toFixed(2);
 
-    // Return total price and total member contribution as an array
     return [finalTotalPrice, totalMemberContribution];
 };
 const [totalPrice, totalMemberContribution] = calculateTotalPrice();
@@ -115,23 +108,19 @@ console.log("Total Member Contribution:", totalMemberContribution);
 
 
 
-  // Function to handle Preview button click
   const handlePreviewClick = (pkg) => {
     setSelectedPackage(pkg);
   };
 
-  // Function to go back to the cart list
   const handleBackToCart = () => {
     setSelectedPackage(null);
-    setMembers([]); // Reset members on return to cart
+    setMembers([]); 
   };
 
-  // Handle adding members to the booking
   const handleAddMember = () => {
     setMembers([...members, { name: "", age: "", isAdult: true }]);
   };
 
-  // Handle member detail change
   const handleMemberChange = (index, field, value) => {
     const updatedMembers = members.map((member, i) =>
       i === index ? { ...member, [field]: value } : member
@@ -141,9 +130,8 @@ console.log("Total Member Contribution:", totalMemberContribution);
   const handleMemberSubmit = async (e) => {
     e.preventDefault();
 
-    // Prepare member data to be sent in the request
     const memberData = {
-      members: members, // Assuming members is an array of member objects
+      members: members, 
     };
 
     try {
@@ -158,7 +146,7 @@ console.log("Total Member Contribution:", totalMemberContribution);
       if (!response.ok) throw new Error("Failed to submit members");
 
       const result = await response.json();
-      setMembers([]); // Clear members after submission
+      setMembers([]); 
       refetch()
       if (result) {
         await Swal.fire({

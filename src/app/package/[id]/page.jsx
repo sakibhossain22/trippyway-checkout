@@ -6,9 +6,9 @@ import StarRatings from "react-star-ratings";
 import { IoIosStar } from "react-icons/io";
 
 const Page = ({ params }) => {
-    const [packData, setPackData] = useState(null); // Treating as single object
-    const [loading, setLoading] = useState(true); // Loading state
-    const [error, setError] = useState(null); // Error handling
+    const [packData, setPackData] = useState(null); 
+    const [loading, setLoading] = useState(true); 
+    const [error, setError] = useState(null); 
     const [color, setColor] = useState('bg-red-600')
     const [textColor, setTextColor] = useState('text-red-600')
     const [starColor, setStarColor] = useState('red')
@@ -33,7 +33,6 @@ const Page = ({ params }) => {
         }
     }, [params?.id]);
 
-    // Loading and error handling
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error: {error}</div>;
     const handleRed = () =>{

@@ -6,22 +6,18 @@ export async function POST(request) {
         const client = await clientPromise;
         const db = client.db('trippyway');
 
-        // Parse the incoming request data
         const { memberData, selectedPackage } = await request.json();
 
         console.log('Received data:', { memberData, selectedPackage });
 
-        // Query to find the package by its id
         const query = { id: selectedPackage };
 
-        // Update operation to add new members to the existing memberData array
         const update = {
             $addToSet: {
-                memberData: { $each: memberData.members }, // Use $addToSet with $each to add multiple members
+                memberData: { $each: memberData.members }
             },
         };
 
-        // Perform the update operation
         const result = await db.collection('packages').updateOne(query, update);
         console.log('Update result:', result);
         if (result.modifiedCount === 0) {

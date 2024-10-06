@@ -16,7 +16,7 @@ const usePackage = (selectedPackage) => {
             }
             return response.json();
         },
-        enabled: !!selectedPackage?.id, // Only run the query if a package ID is present
+        enabled: !!selectedPackage?.id,
     });
 
     return { data, refetch, isLoading, error };

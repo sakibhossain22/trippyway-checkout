@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-// Function to generate a random Tailwind background color
 const getRandomColor = () => {
   const colors = ['bg-red-200', 'bg-yellow-200', 'bg-blue-200', 'bg-green-200', 'bg-purple-200', 'bg-pink-200', 'bg-orange-200'];
   return colors[Math.floor(Math.random() * colors.length)];
